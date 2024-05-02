@@ -22,7 +22,7 @@ class Main:
         self.pressure = Pressure(self.gui.pressure_frame)
         self.irrigation_logic = IrrigationLogic()
         self.valve_controller = ValveController()
-        self.db = XylemPiDatabase('xylempidb', 'pi', 'TetraData1!', 'localhost')
+        self.db = XylemPiDatabase('xylempidb', 'pi', '', 'localhost')
         
         self.timestamp_label = tk.Label(self.gui.timestamp_frame, text="Last Reading: ", font=("Impact", 14), bg="thistle3")
         self.timestamp_label.grid(row=0, column=0, padx=7, pady=7)
