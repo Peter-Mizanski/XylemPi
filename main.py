@@ -22,6 +22,7 @@ class Main:
         self.pressure = Pressure(self.gui.pressure_frame)
         self.irrigation_logic = IrrigationLogic()
         self.valve_controller = ValveController()
+        // put password back below
         self.db = XylemPiDatabase('xylempidb', 'pi', '', 'localhost')
         
         self.timestamp_label = tk.Label(self.gui.timestamp_frame, text="Last Reading: ", font=("Impact", 14), bg="thistle3")
